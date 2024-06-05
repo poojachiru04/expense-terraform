@@ -24,6 +24,6 @@ module "mysql" {
   instance_type = var.components["mysql"]["instance_type"]
   name          = var.components["mysql"]["name"]
   env           = var.env
-  port_no       = var.components["mysql"]["por_no"]
+  port_no       = var.components["mysql"]["port_no"]
 }
 

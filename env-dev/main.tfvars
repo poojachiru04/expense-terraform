@@ -1,3 +1,5 @@
+env= "dev"
+
 components = {
   frontend = {
     name          = "frontend"
