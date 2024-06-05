@@ -1,3 +1,4 @@
+module "app"
 module "frontend" {
   depends_on = [module.backend]
   source     = "git::https://github.com/raghudevopsb79/tf-module-app.git"
