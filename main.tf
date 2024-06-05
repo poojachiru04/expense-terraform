@@ -1,6 +1,6 @@
 module "frontend" {
   depends_on = [module.backend]
-  source     = "git::https://github.com/raghudevopsb79/tf-module-app.git"
+  source     = "git::https://github.com/poojachiru04/tf-module-app.git"
 
   instance_type = var.components["frontend"]["instance_type"]
   name          = var.components["frontend"]["name"]
@@ -10,7 +10,7 @@ module "frontend" {
 
 module "backend" {
   depends_on = [module.mysql]
-  source     = "git::https://github.com/raghudevopsb79/tf-module-app.git"
+  source     = "git::https://github.com/poojachiru04/tf-module-app.git"
 
   instance_type = var.components["backend"]["instance_type"]
   name          = var.components["backend"]["name"]
@@ -19,7 +19,7 @@ module "backend" {
 }
 
 module "mysql" {
-  source = "git::https://github.com/raghudevopsb79/tf-module-app.git"
+  source = "git::https://github.com/poojachiru04/tf-module-app.git"
 
   instance_type = var.components["mysql"]["instance_type"]
   name          = var.components["mysql"]["name"]
