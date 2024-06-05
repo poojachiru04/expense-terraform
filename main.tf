@@ -1,3 +1,3 @@
-module "app"{
-  source= "git::https://gthub.com/poodevops/tf-module-app"
+module "app" {
+  source= "git::https://github.com/poodevops/tf-module-app.git"
 }
