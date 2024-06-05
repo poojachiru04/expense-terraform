@@ -1,3 +1,3 @@
-bucket = "d79-terraform"
-key    = "expense/dev/terraform.tfstate"
+bucket = "poo-devops-project"
+key    = "expense/prod/terraform.tfstate"
 region = "us-east-1"
