@@ -21,3 +21,5 @@ components = {
   }
 
 }
+
+prometheus_server = [ "172.31.88.51" ]
