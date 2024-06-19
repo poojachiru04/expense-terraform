@@ -20,14 +20,13 @@ module "backend" {
 
   instance_type     = var.components["backend"]["instance_type"]
   name              = var.components["backend"]["name"]
-  disk_size         = var.components["backend"]["disk_size"]
   env               = var.env
+  disk_size         = var.components["backend"]["disk_size"]
   port_no           = var.components["backend"]["port_no"]
   vault_token       = var.vault_token
   SSH_PASSWORD      = var.SSH_PASSWORD
   prometheus_server = var.prometheus_server
   zone_id           = data.aws_route53_zone.main.zone_id
-
 
 }
 
@@ -36,8 +35,8 @@ module "mysql" {
 
   instance_type     = var.components["mysql"]["instance_type"]
   name              = var.components["mysql"]["name"]
-  disk_size         = var.components["msql"]["disk_size"]
   env               = var.env
+  disk_size         = var.components["mysql"]["disk_size"]
   port_no           = var.components["mysql"]["port_no"]
   vault_token       = var.vault_token
   SSH_PASSWORD      = var.SSH_PASSWORD
