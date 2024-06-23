@@ -19,7 +19,7 @@ components = {
     name          = "backend"
     instance_type = "t3.small"
     port_no       = 8080
-    disk_size     = 25
+    disk_size     = 30
   }
 
 }
