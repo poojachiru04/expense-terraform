@@ -41,3 +41,10 @@ vpc = {
     default_vpc_rt   = "rtb-0c956acbaf6b0f983"
   }
 }
+
+tags = {
+  project_name = "Expense"
+  bu_unit      = "finance"
+  env          = "dev"
+  created_with = "Terraform"
+}
