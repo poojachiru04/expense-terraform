@@ -46,7 +46,7 @@
 # }
 
 module "vpc" {
-  source = "git::https://github.com/raghudevopsb79/tf-module-vpc.git"
+  source = "git::https://github.com/poojachiru04/tf-module-vpc.git"
 
   for_each         = var.vpc
   vpc_cidr_block   = each.value["vpc_cidr_block"]
@@ -63,7 +63,7 @@ module "vpc" {
 }
 
 module "eks" {
-  source = "git::https://github.com/raghudevopsb79/tf-module-eks.git"
+  source = "git::https://github.com/poojachiru04/tf-module-eks.git"
 
   for_each    = var.eks
   eks_version = each.value["eks_version"]
@@ -76,7 +76,7 @@ module "eks" {
 }
 
 module "rds" {
-  source = "git::https://github.com/raghudevopsb79/tf-module-rds.git"
+  source = "git::https://github.com/poojachiru04/tf-module-rds.git"
 
   for_each        = var.rds
   engine          = each.value["engine"]
